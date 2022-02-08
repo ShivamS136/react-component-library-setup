@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#00a69a" />
+		<title>SWIM Book Form</title>
+		<meta name="robots" content="no index, no follow" />
+		<script>
+			imgtm = [];
+			glmodid = "IMLOGI";
+		</script>
+
+		<!-- Google Tag Manager -->
+		<script>
+			if (document.location.hostname === "localhost") {
+				imgtm["push"] = function ({ event, ...rest }) {
+					console.log(
+						`%cGA -> ${event}: `,
+						"color:#f9ab00;font-weight:bold; padding:8px; background-color:#000;font-size:14px",
+						rest
+					);
+					imgtm[imgtm.length] = { event, ...rest };
+				};
+			}
+		</script>
+		<!-- End Google Tag Manager -->
+	</head>
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+
+		<div id="root"></div>
+
+		<!-- Scripts for suggester -->
+		<!-- <script src="https://utils.imimg.com/imsrchui/js/jquery2.js" crossorigin="anonymous" defer></script>
+		<script src="https://utils.imimg.com/suggest/js/suggest.js" crossorigin="anonymous" defer></script> -->
+	</body>
+</html>

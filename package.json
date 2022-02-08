@@ -1,0 +1,47 @@
+{
+	"name": "swim-book-form",
+	"version": "0.0.1",
+	"private": true,
+	"main": "dist/cjs/main.js",
+	"module": "dist/esm/main.js",
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"dependencies": {
+		"@craco/craco": "^6.4.3",
+		"prop-types": "^15.7.2"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "craco build && craco build --esm",
+		"test": "craco test --env=jsdom"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@purtuga/esm-webpack-plugin": "^1.5.0",
+		"react-scripts": "4.0.3",
+		"sass": "1.35.2"
+	},
+	"peerDependencies": {
+		"react": "17.0.2",
+		"react-dom": "17.0.2"
+	}
+}
